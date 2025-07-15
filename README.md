@@ -1,69 +1,98 @@
-# React + TypeScript + Vite
+# Game Landing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for a game built with React, Vite, and TailwindCSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [About](#about)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## About
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+This project is a sleek and interactive landing page designed to showcase a game. It includes sections such as hero banner, features, about, contact form, and floating animations to provide an engaging user experience.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+The landing page is built with React and leverages GSAP for animations, TailwindCSS for styling, and Vite for fast development and build tooling.
+
+---
+
+## Features
+
+- Responsive layout that works on all device sizes
+- Animated hero section with GSAP integration
+- Smooth floating image animation
+- Contact form with validation
+- Navigation bar with active state highlighting
+- Modular React component architecture for easy maintenance
+- Built with modern tools including Vite, TailwindCSS, and React hooks
+
+---
+
+## Tech Stack
+
+- **React 18**
+- **Vite** - Fast development server and bundler
+- **TailwindCSS** - Utility-first CSS framework
+- **GSAP** - Animation library
+- **React Icons** - Iconography
+- **ESLint** & **Prettier** - Code linting and formatting
+- **TypeScript ESLint** for TypeScript support
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+bash
+```
+ git clone https://github.com/yurii-krymskiy/game-landing-gsap.git
+ cd game-landing
+ ```
+
+Install dependencies:
+```
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Run the development server:
 ```
+npm run dev
+```
+
+Open your browser and navigate to http://localhost:5173 (or the port Vite shows).
+
+Available Scripts
+
+```
+npm run dev - Starts the development server with hot module replacement.
+npm run build - Builds the app for production.
+npm run preview - Preview the production build locally.
+npm run lint - Runs ESLint to check for code issues.
+```
+
+Each component is a modular part of the landing page, keeping the codebase clean and maintainable.
+
+Contributing
+
+Contributions are welcome! Please open issues and submit pull requests for any bug fixes or improvements.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
