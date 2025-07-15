@@ -10,8 +10,8 @@ const Button = ({
 }: {
   id: string,
   title: string,
-  rightIcon?: string,
-  leftIcon: ReactNode,
+  rightIcon?: ReactNode,
+  leftIcon?: ReactNode,
   containerClass: string
 }) => {
   return (
