@@ -3,6 +3,8 @@ import Features from "./components/Features";
 import Hero from "./components/Hero";
 import NavBar from "./components/Navbar";
 import FloatingImage from "./components/FloatingImage";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <About />
       <Features />
       <FloatingImage />
+      <Contact />
+      <Footer />
     </main>
   );
 }
