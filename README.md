@@ -4,7 +4,7 @@ A modern, responsive landing page for a game built with React, Vite, and Tailwin
 
 ---
 
-## Table of Contents
+# Table of Contents
 
 - [About](#about)
 - [Features](#features)
@@ -17,7 +17,7 @@ A modern, responsive landing page for a game built with React, Vite, and Tailwin
 
 ---
 
-## About
+# About
 
 This project is a sleek and interactive landing page designed to showcase a game. It includes sections such as hero banner, features, about, contact form, and floating animations to provide an engaging user experience.
 
@@ -25,7 +25,7 @@ The landing page is built with React and leverages GSAP for animations, Tailwind
 
 ---
 
-## Features
+# Features
 
 - Responsive layout that works on all device sizes
 - Animated hero section with GSAP integration
@@ -37,7 +37,7 @@ The landing page is built with React and leverages GSAP for animations, Tailwind
 
 ---
 
-## Tech Stack
+# Tech Stack
 
 - **React 18**
 - **Vite** - Fast development server and bundler
@@ -49,14 +49,14 @@ The landing page is built with React and leverages GSAP for animations, Tailwind
 
 ---
 
-## Getting Started
+# Getting Started
 
-### Prerequisites
+# Prerequisites
 
 - Node.js (v16 or higher recommended)
 - npm or yarn
 
-### Installation
+# Installation
 
 1. Clone the repository:
 
@@ -78,7 +78,7 @@ npm run dev
 
 Open your browser and navigate to http://localhost:5173 (or the port Vite shows).
 
-Available Scripts
+# Available Scripts
 
 ```
 npm run dev - Starts the development server with hot module replacement.
@@ -89,10 +89,10 @@ npm run lint - Runs ESLint to check for code issues.
 
 Each component is a modular part of the landing page, keeping the codebase clean and maintainable.
 
-Contributing
+# Contributing
 
 Contributions are welcome! Please open issues and submit pull requests for any bug fixes or improvements.
 
-License
+# License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
